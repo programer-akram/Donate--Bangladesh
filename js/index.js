@@ -42,7 +42,8 @@ document.getElementById('donate-btn-noakhali').addEventListener('click', functio
 // ---------------history section start----------------
 
 if(amountForNoakhali !== false  ){
-
+    document.getElementById('modal').classList.remove('hidden')
+    
 const div = document.createElement('div');
 div.classList.add('border-2');
 div.classList.add('rounded-lg');
@@ -78,6 +79,7 @@ document.getElementById('transaction-history').appendChild(div);
 //donate btn for Feni
 document.getElementById('donate-btn-feni').addEventListener('click', function(){
 
+
     const title = getTextTitleById('feni');
     console.log(title);
 
@@ -93,6 +95,9 @@ document.getElementById('donate-btn-feni').addEventListener('click', function(){
    // ---------------history section start----------------
 
    if(amountForFeni !== false ){
+
+    document.getElementById('modal').classList.remove('hidden')
+
 
 const div = document.createElement('div');
 div.classList.add('border-2');
@@ -145,6 +150,9 @@ document.getElementById('donate-btn-quota').addEventListener('click', function()
 
      if(amountForQuota !== false ){
 
+        document.getElementById('modal').classList.remove('hidden')
+
+
 const div = document.createElement('div');
 div.classList.add('border-2');
 div.classList.add('rounded-lg');
@@ -177,6 +185,11 @@ document.getElementById('transaction-history').appendChild(div);
    document.getElementById('main-balance').innerText = newMainBalance; 
 })
 
+
+//close button
+document.getElementById('close-btn').addEventListener('click',function(){
+    document.getElementById('modal').classList.add('hidden')
+})
 
 
 
