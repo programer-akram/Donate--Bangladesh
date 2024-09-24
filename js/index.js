@@ -45,6 +45,7 @@ div.classList.add('rounded-lg');
 div.classList.add('border-gray-500');
 div.classList.add('mb-5');
 div.classList.add('p-3');
+div.classList.add('space-y-3');
 
 div.innerHTML =`
 <h1 class= 'text-xl font-bold'>${amountForNoakhali} Taka is Donated for ${title}  </h1>   
@@ -90,6 +91,8 @@ div.classList.add('rounded-lg');
 div.classList.add('border-gray-500');
 div.classList.add('mb-5');
 div.classList.add('p-3');
+div.classList.add('space-y-3');
+
 
 div.innerHTML =`
 <h1 class= 'text-xl font-bold'>${amountForFeni} Taka is Donated for ${title}  </h1>   
@@ -136,6 +139,8 @@ div.classList.add('rounded-lg');
 div.classList.add('border-gray-500');
 div.classList.add('mb-5');
 div.classList.add('p-3');
+div.classList.add('space-y-3');
+
 
 div.innerHTML =`
 <h1 class= 'text-xl font-bold'>${amountForQuota} Taka is Donated for ${title}  </h1>   
