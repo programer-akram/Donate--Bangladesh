@@ -19,14 +19,14 @@
 <body>
     <header class="fixed top-0 right-0 left-0 bg-gray-50">
        <nav class="flex justify-around  bg-[#F9F7F3] h-20  justify-items-center items-center">
-        <div id="blog-btn" class="btn green text-xl font-bold">Blog</div>
+        <div id="blog-btn" class="btn green sm:text-lg lg:text-xl font-bold">Blog</div>
         <div id="title-name" class="flex justify-between">
             <img src="./assets/logo.png" alt="">
             <h1 class="text-2xl sm:hidden lg:block font-bold ml-2">Donate Bangladesh</h1>
         </div>
         <div class="flex ">
             <img src="./assets/coin.png" alt="">
-            <h2  class="text-2xl font-bold ml-2"><span id="main-balance">50000</span> BDT </h2>
+            <h2  class="lg:text-2xl sm:text-lg font-bold ml-2"><span id="main-balance">50000</span> BDT </h2>
         </div>
        </nav>
 
@@ -36,17 +36,18 @@
        </div>
     </header>
 
-    <section id="donate-section" class="mx-48  space-y-24 mt-72 mb-24">
+
+    <section id="donate-section" class="lg:mx-48 sm:mx-32  space-y-24 mt-72 mb-24">
 
         <!-- Donate for Noakhali start -->
         <div class="flex justify-between flex-col lg:flex-row gap-4">
             <img
               src="./assets/noakhali.png"
-              class="max-w-sm rounded-lg " />
+              class="lg:max-w-md rounded-lg sm:w-full " />
             <div>
-              <div class="flex gap-2">
+              <div class="flex gap-2 bg-gray-100 lg:w-1/6 sm:w-1/3 p-3 rounded-lg">
                 <img src="./assets/coin.png" alt="">
-                <h2 id="balance" class="text-2xl ml-2"><span id="noakhali-balance">500</span> BDT </h2>
+                <h2 id="balance" class="text-xl font-bold ml-2"><span id="noakhali-balance">500</span> BDT </h2>
             </div>
             <div>
               <h1 id="noakhali" class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -55,8 +56,13 @@
               </p>
             </div>
               
-              <input id="amount-for-noakhali" class="w-full mb-4" type="text" placeholder="Write Donation Amount">
+              <input id="amount-for-noakhali" class="w-full mb-4 border-2 border-gray-200 rounded-lg" type="text" placeholder="Write Donation Amount">
               <button id="donate-btn-noakhali" class="btn green w-full font-bold">Donate Now</button>
+
+              <!-- modal -->
+           
+              <!-- modal -->
+
             </div>
           </div>
         
@@ -66,11 +72,11 @@
         <div class="flex justify-between flex-col lg:flex-row gap-4">
             <img
               src="./assets/feni.png"
-              class="max-w-sm rounded-lg " />
+              class="lg:max-w-md rounded-lg sm:w-full " />
             <div>
-              <div class="flex gap-2">
+              <div class="flex gap-2  bg-gray-100 lg:w-1/6 sm:w-1/3 p-3 rounded-lg">
                 <img src="./assets/coin.png" alt="">
-                <h2 id="balance" class="text-2xl ml-2"><span id="feni-balance">600</span> BDT </h2>
+                <h2 id="balance" class="text-xl font-bold ml-2"><span id="feni-balance">600</span> BDT </h2>
             </div>
             <div>
               <h1 id="feni" class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -79,7 +85,7 @@
               </p>
             </div>
               
-              <input id="amount-for-feni" class="w-full mb-4" type="text" placeholder="Write Donation Amount">
+              <input id="amount-for-feni" class="w-full mb-4 border-2 border-gray-200 rounded-lg " type="text" placeholder="Write Donation Amount">
               <button id="donate-btn-feni" class="btn green w-full font-bold">Donate Now</button>
             </div>
           </div>
@@ -90,11 +96,11 @@
         <div class="flex justify-between flex-col lg:flex-row gap-4">
             <img
               src="./assets/quota-protest.png"
-              class="max-w-sm rounded-lg " />
+              class="lg:max-w-md rounded-lg sm:w-full" />
             <div>
-              <div class="flex gap-2">
+              <div class="flex gap-2  bg-gray-100 lg:w-1/6 sm:w-1/3 p-3  rounded-lg">
                 <img src="./assets/coin.png" alt="">
-                <h2  class="text-2xl ml-2"><span id="quota-balance">900</span> BDT </h2>
+                <h2  class="text-xl font-bold ml-2"><span id="quota-balance">900</span> BDT </h2>
             </div>
             <div>
               <h1 id="quota" class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
@@ -103,14 +109,14 @@
               </p>
             </div>
               
-              <input id="amount-for-quota" class="w-full mb-4" type="text" placeholder="Write Donation Amount">
+              <input id="amount-for-quota" class="w-full mb-4 border-2 border-gray-200 rounded-lg" type="text" placeholder="Write Donation Amount">
               <button id="donate-btn-quota" class="btn green w-full font-bold">Donate Now</button>
             </div>
           </div>
         <!-- Donate for quota movement end-->
         </section>
 
-    <section id="history-section" class="hidden mt-72 mx-48 ">
+    <section id="history-section" class="hidden mt-72 lg:mx-48 sm:mx-10 ">
         <div id="transaction-history" >
 
         </div>

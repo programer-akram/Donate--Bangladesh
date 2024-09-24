@@ -13,58 +13,55 @@
 
   <header>
     <nav class="flex justify-around  bg-[#F9F7F3] h-20  justify-items-center items-center">
-      <div id="home-btn" class="btn bg-[#B4F461] text-xl font-bold">Home</div>
+      <div id="home-btn" class="btn bg-[#B4F461] sm:text-lg lg:text-xl font-bold">Home</div>
       <div id="title-name" class="flex justify-between">
           <img src="./assets/logo.png" alt="">
-          <h1 class="text-2xl font-bold ml-2">Donate Bangladesh</h1>
+          <h1 class="text-2xl font-bold ml-2 sm:hidden lg:block">Donate Bangladesh</h1>
       </div>
       <div class="flex ">
           <img src="./assets/coin.png" alt="">
-          <h2 id="balance" class="text-2xl font-bold ml-2"><span>50000</span> BDT </h2>
+          <h2 id="balance" class="lg:text-2xl sm:text-lg font-bold ml-2"><span>50000</span> BDT </h2>
       </div>
      </nav>
   </header>
 
-  <main class="mx-52">
+  <main class="sm:mx-10 lg:mx-52">
 
-    <h1 class="text-3xl font-bold mt-10 mb-5">Important FAQ</h1>
+    <h1 class="text-3xl font-bold mt-10 mb-5 flex gap-4">Important FAQ <img width="40" height="40" src="https://img.icons8.com/office/40/faq.png" alt="faq"/></h1>
 
     <div class="join join-vertical w-full">
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="my-accordion-4" checked="checked" />
         <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
         </div>
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="my-accordion-4" />
         <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>The getElementById() method of the Document interface returns an Element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.</p>
         </div>
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="my-accordion-4" />
         <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful? </div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
         </div>
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="my-accordion-4" />
         <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>Manipulating Element Attributes
+            The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.</p>
         </div>
       </div>
       
     </div>
   </main>
-
-  
-
-
 
 
     <script>
