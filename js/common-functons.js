@@ -4,8 +4,6 @@ function getTextTitleById(id){
     return textTitle;
 }
 
-
-
 // for getting innerText
 function getInnerTextById(id){
     const innerText = document.getElementById(id).innerText;
@@ -13,34 +11,15 @@ function getInnerTextById(id){
     return innerTextNumber;
 }
 
-// const mainBalance = getInnerTextById('main-balance');
-
 // for getting input value 
 function getInputValueById(id){
     const inputValue = document.getElementById(id).value;
     const inputValueNumber = Number(inputValue);
     const mainBalance = getInnerTextById('main-balance');
-    const title = getTextTitleById('noakhali');
-    const title2 = getTextTitleById('feni');
-    const title3 = getTextTitleById('quota');
-
-
-
-    if( inputValueNumber > 0 && inputValueNumber < mainBalance  ){
-        //transaction history
-        // const div = document.createElement('div');
-        // div.classList.add('border-2');
-        // div.classList.add('rounded-lg');
-        // div.classList.add('border-gray-500');
-        // div.classList.add('mb-5');
-        // div.classList.add('p-3');
-
-        // div.innerHTML =`
-        // <h1 class= 'text-xl font-bold'>${inputValueNumber} Taka is Donated for ${title}  </h1>   
-        // <p class='text-lg'>Date: ${new Date()}</p>
+    
+    
+    if( inputValueNumber > 0 && inputValueNumber <= mainBalance  ){
         
-        // `
-        // document.getElementById('transaction-history').appendChild(div);
         return inputValueNumber;
         
     }else if(inputValueNumber > mainBalance){

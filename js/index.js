@@ -23,21 +23,16 @@ document.getElementById('history-btn').addEventListener('click', function(){
 
 
 
-
-
 //donate btn for noakhali
 document.getElementById('donate-btn-noakhali').addEventListener('click', function(){
 
     const title = getTextTitleById('noakhali');
-    console.log(title);
 
     const mainBalance = getInnerTextById('main-balance');
 
     const initialCollectionNoakhali = getInnerTextById('noakhali-balance');
-    console.log('noakhali balance', initialCollectionNoakhali);
 
-   const amountForNoakhali = getInputValueById('amount-for-noakhali');
-   console.log('amount noakhali', amountForNoakhali);
+    const amountForNoakhali = getInputValueById('amount-for-noakhali');
 
 // ---------------history section start----------------
 
@@ -62,10 +57,9 @@ document.getElementById('transaction-history').appendChild(div);
 // ---------------history section end----------------
 
    const noakhaliCollection = initialCollectionNoakhali + amountForNoakhali;
-   console.log(noakhaliCollection);
 
    const newMainBalance = mainBalance - amountForNoakhali;
-   console.log(newMainBalance);
+   
    document.getElementById('noakhali-balance').innerText = noakhaliCollection;
 
    document.getElementById('main-balance').innerText = newMainBalance;
@@ -73,31 +67,22 @@ document.getElementById('transaction-history').appendChild(div);
 })
 
 
-
-
-
 //donate btn for Feni
 document.getElementById('donate-btn-feni').addEventListener('click', function(){
 
 
     const title = getTextTitleById('feni');
-    console.log(title);
 
     const mainBalance = getInnerTextById('main-balance');
 
     const initialCollectionFeni = getInnerTextById('feni-balance');
-    console.log('feni balance', initialCollectionFeni);
 
-   const amountForFeni = getInputValueById('amount-for-feni');
-   console.log('amount feni', amountForFeni);
-
+    const amountForFeni = getInputValueById('amount-for-feni');
 
    // ---------------history section start----------------
-
    if(amountForFeni !== false ){
 
-    document.getElementById('modal').classList.remove('hidden')
-
+    document.getElementById('modal').classList.remove('hidden');
 
 const div = document.createElement('div');
 div.classList.add('border-2');
@@ -118,10 +103,8 @@ document.getElementById('transaction-history').appendChild(div);
 
 
    const feniCollection = initialCollectionFeni + amountForFeni;
-   console.log(feniCollection);
 
    const newMainBalance = mainBalance - amountForFeni;
-   console.log(newMainBalance);
 
    document.getElementById('feni-balance').innerText = feniCollection;
 
@@ -130,28 +113,22 @@ document.getElementById('transaction-history').appendChild(div);
 
 
 
-
-
 //donate btn for quota
 document.getElementById('donate-btn-quota').addEventListener('click', function(){
 
     const title = getTextTitleById('quota');
-    console.log(title);
 
     const mainBalance = getInnerTextById('main-balance');
 
     const initialCollectionQuota = getInnerTextById('quota-balance');
-    console.log('quota balance', initialCollectionQuota);
 
    const amountForQuota = getInputValueById('amount-for-quota');
-   console.log('amount quota', amountForQuota);
 
      // ---------------history section start----------------
 
      if(amountForQuota !== false ){
 
         document.getElementById('modal').classList.remove('hidden')
-
 
 const div = document.createElement('div');
 div.classList.add('border-2');
@@ -168,17 +145,12 @@ div.innerHTML =`
 document.getElementById('transaction-history').appendChild(div);
 
      }
-
-
 // ---------------history section end----------------
 
 
-
    const quotaCollection = initialCollectionQuota + amountForQuota;
-   console.log(quotaCollection);
 
    const newMainBalance = mainBalance - amountForQuota;
-   console.log(newMainBalance);
 
    document.getElementById('quota-balance').innerText = quotaCollection;
 
